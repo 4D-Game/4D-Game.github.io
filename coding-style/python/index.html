@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#c-coding-style" class="md-skip">
+        <a href="#python-coding-style" class="md-skip">
           Skip to content
         </a>
       
@@ -461,7 +461,7 @@
                   </a>
                 
                 
-                <h1 id="c-coding-style">C++ Coding Style</h1>
+                <h1 id="python-coding-style">Python Coding Style</h1>
 <p>Next to consistency as a main aspect of good code, the second most important aspect is a certain style which the average <code>python</code> programmer is capable to read and understand properly. Therefore the following documents states the essential naming conventions.</p>
 <blockquote>
 <p>Here is a link for a more detailed dive into the <a href="https://www.python.org/dev/peps/pep-0008/">`PEP8 - Style Guide for Python Code'</a></p>
@@ -521,14 +521,13 @@ The first parameter of the <code>__init__</code> function should always be calle
 <p>If the section of code is not clearly understandable there should be a short description of the current function in form of a comment.</p>
 <p><em>Example</em>
 <div class="highlight"><pre><span></span><code><span class="c1"># divides up two double values</span>
-<span class="n">division</span><span class="p">(</span><span class="n">dividend</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">divisor</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span> <span class="p">{</span>
+<span class="k">def</span> <span class="nf">division</span><span class="p">(</span><span class="n">dividend</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">divisor</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
    <span class="k">return</span> <span class="p">(</span><span class="n">dividend</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
-<span class="p">}</span>
 </code></pre></div></p>
 <p><strong>Documentation:</strong></p>
 <p>The documentation of the written code is created automatically. To provide the needed Information every function, class or method needs a docstring with a special format.</p>
 <p><em>Example:</em>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">some_function</span><span class="p">(</span><span class="n">some_variable</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">some_function</span><span class="p">(</span><span class="n">some_variable</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">      &lt;Description&gt;</span>
 
@@ -537,7 +536,6 @@ The first parameter of the <code>__init__</code> function should always be calle
 
 <span class="sd">      Returns: &lt;Description</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-<span class="p">}</span>
 </code></pre></div></p>
 <p><strong>Head of File:</strong></p>
 <p>In order to get quick information about the <code>.py</code> files purpose there should be a docstring at the beginning of the file.</p>
